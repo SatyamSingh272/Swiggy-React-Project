@@ -14,7 +14,7 @@ export default function DineCard({RestData}){
     />
 
     {/* Dark Gradient Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent rounded-lg"></div>
+    <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent rounded-lg"></div>
 
     {/* Restaurant Name */}
     <p className="absolute bottom-2 left-2 text-lg font-bold text-white drop-shadow-lg z-10">
