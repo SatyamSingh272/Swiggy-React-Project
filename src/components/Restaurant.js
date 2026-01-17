@@ -12,7 +12,7 @@ export default function Restaurant(){
         async function fetchData(){
 
 
-           const proxyServer = "https://thingproxy.freeboard.io/fetch/";
+           const proxyServer = "https://cors-anywhere.herokuapp.com/";
            const swiggyAPI = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.52110&lng=73.85020&is-seo-homepage-enabled=true";
            const response = await fetch(proxyServer+swiggyAPI)
            const data = await response.json();
