@@ -16,17 +16,13 @@ export default function Restaurant(){
             const data = await response.json();
             setRestData(data);
 
-        //    const proxyServer = "https://cors-anywhere.herokuapp.com/";
-        //    const swiggyAPI = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.52110&lng=73.85020&is-seo-homepage-enabled=true";
-        //    const response = await fetch(proxyServer+swiggyAPI)
-        //    const data = await response.json();
 
             setRestData(data.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
         }
         fetchData();
     },[])
 
-    //console.log(RestData);
+    
 
     return(
         <div className="flex flex-wrap w-[80%] mx-auto mt-20 gap-5">
