@@ -1,5 +1,7 @@
 node_modules/
 .parcel-cache/
 dist/
-tester.html/
-readme.md/
+tester.html
+readme.md
+
+
