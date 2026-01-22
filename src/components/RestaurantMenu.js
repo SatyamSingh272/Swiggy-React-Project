@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 
 export default function RestaurantMenu(){
 
-    let {id}= useParams();
+    let {id} = useParams();
     console.log(id);
 
     const [RestData, setRestData] = useState(null);
@@ -19,7 +19,7 @@ export default function RestaurantMenu(){
             setRestData(data);
 
 
-            setRestData(data);
+           
         }
         fetchData();
     },[])
@@ -27,7 +27,10 @@ export default function RestaurantMenu(){
     console.log(RestData);
 
     return(
+        <>
         <h1>Hello World</h1>
+        <h2>{id}</h2>
+        </>
     )
 
 }

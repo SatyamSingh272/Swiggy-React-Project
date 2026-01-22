@@ -1,8 +1,9 @@
-
+import { Link } from "react-router"
 
 export default function RestCard({restInfo}){
 
     return(
+      <Link to={"/city/pune/"+restInfo?.info?.id}>
         <div className="max-w-70 mb-2 transform transition duration-150  hover:scale-95">
         <img className="w-70 h-45 object-cover rounded-xl" src={"https://media-assets.swiggy.com/swiggy/image/upload/"+restInfo?.info?.cloudinaryImageId}></img>
         <div className="w-[90%] mx-auto mt-3">
@@ -31,5 +32,6 @@ export default function RestCard({restInfo}){
 
     
     </div>
+    </Link>
     )
 }
