@@ -13,7 +13,7 @@ export default function RestaurantMenu(){
 
         async function fetchData(){
 
-            const response = await fetch (`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.52110&lng=73.85020&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`)
+            const response = await fetch (`https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.7040592&lng=77.10249019999999&restaurantId=${id}`)
 
             const data = await response.json();
             setRestData(data);
@@ -34,3 +34,8 @@ export default function RestaurantMenu(){
     )
 
 }
+
+
+
+
+
