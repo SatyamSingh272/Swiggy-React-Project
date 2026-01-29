@@ -1,4 +1,6 @@
 import { Link } from "react-router"
+import RestInfo from "./RestInfo"
+
 
 export default function MenuCard(menuItems){
 
@@ -7,7 +9,7 @@ export default function MenuCard(menuItems){
         <p>{menuItems.title}</p>
         <div>
             {
-                menuItems.itemCards.map((items)=><RestInfo key={items.card.info.id} restData={items?.card?.info}></RestInfo>)
+                menuItems?.itemCards?.map((items)=><RestInfo key={items?.card?.info?.id} restData={items?.card?.info}></RestInfo>)
             }
         </div>
 
