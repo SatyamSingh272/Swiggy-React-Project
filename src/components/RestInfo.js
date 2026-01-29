@@ -20,7 +20,7 @@ export default function RestInfo({restData}){
             <button className="absolute bottom-1 left-20 rounded-xl text-2xl text-green-600 px-6 py-2 shadow-md border border-white bg-white">ADD</button>
           </div>
         </div>
-        <hr className="mb-6 mt-2"></hr>
+        {/* <hr className="mb-6 mt-2"></hr> */}
         </>
 
     )
