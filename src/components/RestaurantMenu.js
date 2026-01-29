@@ -7,7 +7,7 @@ export default function RestaurantMenu(){
     let {id} = useParams();
     console.log(id);
 
-    const [RestData, setRestData] = useState(null);
+    const [RestData, setRestData] = useState([]);
 
     useEffect(()=>{
 
@@ -33,25 +33,25 @@ export default function RestaurantMenu(){
     return(
      
 
-         <div>
+         
+// {/* 
+//         <div className="w-[80%] mx-auto mt-20 mb-20">
+//           <Link to={`/city/pune/${id}/search`}>
+//           <p className="w-full text-center py-4 rounded-4xl bg-gray-200 text-2xl">Search for Dishes</p>
+//           </Link>
+//         </div>  
 
-        <div className="w-[80%] mx-auto mt-20 mb-20">
-          <Link to={`/city/pune/${id}/search`}>
-          <p className="w-full text-center py-4 rounded-4xl bg-gray-200 text-2xl">Search for Dishes</p>
-          </Link>
-        </div>  
-
-        <div className="w-[80%] mx-auto mt-20 mb-20">
-        <button className={`text-2xl py-2 px-8 mr-4 border rounded-2xl ${selected==="veg"? "bg-green-600": "bg-gray-300"} `} onClick={()=>setSelected(selected==='veg'?null:'veg')}>Veg</button>
-        <button className={`text-2xl py-2 px-4 border rounded-2xl ${selected==="nonveg"? "bg-red-500": "bg-gray-300"}`} onClick={()=>setSelected(selected==='nonveg'?null:'nonveg')}>Non veg</button>
-        </div>
-       
+//         <div className="w-[80%] mx-auto mt-20 mb-20">
+//         <button className={`text-2xl py-2 px-8 mr-4 border rounded-2xl ${selected==="veg"? "bg-green-600": "bg-gray-300"} `} onClick={()=>setSelected(selected==='veg'?null:'veg')}>Veg</button>
+//         <button className={`text-2xl py-2 px-4 border rounded-2xl ${selected==="nonveg"? "bg-red-500": "bg-gray-300"}`} onClick={()=>setSelected(selected==='nonveg'?null:'nonveg')}>Non veg</button>
+//         </div>
+//         */}
         <div className="w-[80%] mx-auto mt-20">
           {
-            RestData.map((menuItems)=><MenuCard key={menuItems?.card?.card?.title} menuItems={menuItems?.card?.card} foodselected={selected}></MenuCard>)
+            RestData.map((menuItems)=><MenuCard key={menuItems?.card?.card?.title} menuItems={menuItems?.card?.card}></MenuCard>)
           }
         </div>
-        </div>
+        
        
     )
 
