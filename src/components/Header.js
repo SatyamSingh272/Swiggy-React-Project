@@ -1,5 +1,5 @@
 
-// first div: swiggy ka logo
+
 import { Link } from "react-router-dom"
 
 export default function Header(){
