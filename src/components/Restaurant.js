@@ -20,7 +20,7 @@ export default function Restaurant(){
      fetchData();
     },[])
 
-    // console.log(RestData);
+  
    
     // Shimmer Effect 
     if(RestData.length==0)
