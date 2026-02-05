@@ -12,10 +12,6 @@ import {Provider} from "react-redux"
 import Checkout from "./components/Checkout";
 
 
-
-
-// Header section: Let's build it
-
 function App(){
     
     return(
@@ -41,6 +37,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(<App></App>);
 
 
 
-// Proxy server "https://cors-anywhere.herokuapp.com/"; 
 
 
